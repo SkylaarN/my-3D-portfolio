@@ -45,7 +45,7 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
           Nkosinathi &nbsp;
-            <span className='sm:block hidden'> | Nkosinathi Silima</span>
+            <span className='sm:block hidden'> | Nkosinathi Radebe</span>
           </p>
         </Link>
 
