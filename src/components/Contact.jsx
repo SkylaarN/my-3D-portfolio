@@ -33,16 +33,22 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        // public_key CPW3grpOe_8N06K-p
+        // template template_ldxpwqo
+        // email service_id service_rdqoeyh
+        import.meta.env.VITE_EMAILJS_USERID,
+        import.meta.env.VITE_EMAILJS_TEMPLATEID,
+        // "service_rdqoeyh",
+        // "template_ldxpwqo",
         {
           from_name: form.name,
-          to_name: "Nathi Silima portfolio",
+          to_name: "JavaScript Mastery",
           from_email: form.email,
-          to_email: "nkosinathisilima@gmail.com",
+          to_email: "mrnathi@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_RECEIVERID
+        // "CPW3grpOe_8N06K-p"
       )
       .then(
         () => {
